@@ -1,6 +1,7 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+background-image: url(nature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
   }
   
   .topnav {
@@ -52,4 +53,15 @@ body {
       display: block;
       text-align: left;
     }
+  }
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    min-width: 150px;
+    max-width: 600px;
+    border: medium solid #000;
+    border-radius: 10px;
+    margin: 35px 20%;
+    padding: 10px 10px
   }
