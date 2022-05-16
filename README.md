@@ -1,7 +1,7 @@
 # Capstone2
 A simple responsive webpage with sections
 
-Repo: [Capstone2] (https://github.com/IGNORAMUS1/Capstone2).
+Repo: [Capstone2](https://github.com/IGNORAMUS1/Capstone2).
 
 ## Features of the website
 Below is the list of features that make up our Website:-
