@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  background: url(../nature.jpg) no-repeat;
+  background-position: center;
+}
+
+.card-body{
+  background-color: #fff;
+}
+
+.main-content{
+  margin-top: 30px !important;
+}
