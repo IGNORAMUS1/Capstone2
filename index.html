@@ -13,85 +13,109 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--<link rel="stylesheet" href="styles/bootsrap.min.css">-->
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="bootstrap.css">
 
         <title>Capstone2</title>
     </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+    <body class="text-left">
 
+        <!-- NAVBAR -->
+        <div class="topnav" id="myTopnav">
+            <a href="practice.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+
+        <!-- FORM -->
         <div class="main-content col-md-12">
             <div class="card-body">
-                <div class="card-title mb-3">Form Inputs</div>
-                <form>
+                <div class="card-title mb-3"><b>Create an account</b></div>
+                <form class="needs-validation" novalidate="novalidate">
                     <div class="row">
                         <div class="col-md-6 form-group mb-3">
-                            <label for="firstName1">Username</label>
-                            <input class="form-control form-control-rounded" id="firstName1" type="text" placeholder="Enter your username" required>
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input class="form-control" id="validationCustomUsername" type="text" placeholder="Username" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 form-group mb-3">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input class="form-control form-control-rounded" id="exampleInputEmail1" type="email" placeholder="Enter email" required>
+                            <label for="validationCustom01">Email address</label>
+                            <input class="form-control" id="validationCustom01" type="email" placeholder="Email" required>
                             <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
                         <div class="col-md-6 form-group mb-3">
-                            <label for="phone">Phone</label>
-                            <input class="form-control form-control-rounded" id="phone" placeholder="Enter phone" required>
+                            <label for="validationCustom02">Phone</label>
+                            <input class="form-control" id="validationCustom02" type="tel" placeholder="Enter phone" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid phone number.
+                            </div>
                         </div>
                         <div class="col-md-6 form-group mb-3">
-                            <label for="credit1">Password</label>
-                            <input class="form-control form-control-rounded" id="credit1" placeholder="Password" required>
+                            <label for="validationCustom03">Password</label>
+                            <input class="form-control" id="validationCustom03" type="password" placeholder="Password" required>
+                            <div class="invalid-feedback">
+                                Please enter a strong password.
+                            </div>
+                            <div class="valid-feedback">
+                                Strong!
+                            </div>
                         </div>
                         <div class="col-md-6 form-group mb-3">
-                            <label for="website">Confirm Password</label>
-                            <input class="form-control form-control-rounded" id="website" placeholder="Confirm Password" required>
+                            <label for="validationCustom04">Confirm Password</label>
+                            <input class="form-control" id="validationCustom04" type="password" placeholder="Confirm Password" required>
+                            <div class="invalid-feedback" id="confirmPasswordFeedback">
+                                
+                            </div>
                         </div>
                         <div class="col-md-6 form-group mb-3">
                             <label for="picker1">Gender</label>
-                            <select class="form-control form-control-rounded" required>
+                            <select class="form-control" id="validationCustom05" required>
                                 <option>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>Prefer not to say</option>
                             </select>
-                        </div>
-                        <div class="col-md-12">
-                            <button class="btn btn-primary">Submit</button>
+                            <div class="invalid-feedback">
+                                Please select a gender.
+                            </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" id="invalidCheck" type="checkbox" required="required">
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -106,6 +130,7 @@
         <script src="script/bootstrap.bundle.js"></script>
         <script src="script/bootstrap.js"></script>
         <script src="script/index.js"></script>
+        <script type="text/javascript" src="script/form.validation.script.min.js"></script>
 
     </body>
 
